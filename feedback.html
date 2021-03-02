@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <script>
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+    <style>
+        button {
+            width: 75px;
+            height: 25px;
+            font-size: 60;
+        }
+    </style>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <div>
+        <form id="myForm" align="center">
+            <b>1. Design a feedback form that rates a particular website.</b>
+
+            <div>
+                <p>
+                    <li>Information available on the website : </li>
+                    <label for="Very Good">Very Good</label>
+                    <input type="radio" name="info" title="Very Good">
+                    <label for="Good">Good</label>
+                    <input type="radio" name="info" title="Good">
+                    <label for="Satisfactory">Satisfactory</label>
+                    <input type="radio" name="info" title="Satisfactory">
+                </p>
+            </div>
+
+
+            </p>
+            <div>
+                <p>
+                    <li>Overall experience using this website : </li>
+                    <label for="Very Good">Very Good</label>
+                    <input type="radio" name="exp" title="Very Good">
+                    <label for="Good">Good</label>
+                    <input type="radio" name="exp" title="Good">
+                    <label for="Satisfactory">Satisfactory</label>
+                    <input type="radio" name="exp" title="Satisfactory">
+                </p>
+        </form>
+
+
+
+        <br> Comments:
+
+        <textarea name="Comments" title="Comments" cols=30 rows=4></textarea>
+
+        </br><br> Your name:
+
+        <input type="text" name="UserName" title="Name" size=35 maxlength=35 value="">
+
+        </br><br> Your address:
+
+        <input type="text" name="UserName" size=35 maxlength=35 value="" title="Your address">
+
+        </br>
+        </p>
+        <button value="" name="Submit" title="SUBMIT">Submit</button>
+
+        <button onclick="myFunction()" value=" " name="Reset " title="RESET ">Reset</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
